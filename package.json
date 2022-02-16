@@ -1,0 +1,22 @@
+{
+  "dependencies": {
+    "howler": "^2.2.3"
+  },
+  "name": "webprog",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marynekrasova/webprog.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marynekrasova/webprog/issues"
+  },
+  "homepage": "https://github.com/marynekrasova/webprog#readme",
+  "description": ""
+}
