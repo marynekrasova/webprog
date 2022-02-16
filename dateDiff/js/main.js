@@ -1,5 +1,6 @@
 import { printError, printREsult } from './printResult.js'
 import getDateDiff from './getDateDiff.js'
+import updateCounter from "./timer.js";
 
 const form = document.getElementById('datecalc')
 
@@ -19,3 +20,27 @@ form.onsubmit = (event) => {
     printREsult(dateDiff)
   }
 }
+
+//Timer
+
+// Получаем элементы на странице
+const start = document.getElementById("start");
+const stop = document.getElementById("stop");
+
+start.onclick = function () {
+  start.disabled = true;
+  stop.disabled = false;
+  window.TimerId = window.setInterval(updateCounter, 1000);
+}
+
+stop.onclick = function () {
+  stop.disabled = true;
+  start.disabled = false;
+  window.clearInterval(window.TimerId);
+}
+
+
+
+
+
+
