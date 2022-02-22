@@ -4,8 +4,9 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
   <title>Document</title>
-  <script type="module" src="./js/main.js"></script>
+  <script type="module" src="./js/index.js"></script>
 </head>
 <body>
   <form id="datecalc">
@@ -20,8 +21,34 @@
     </label>
     <button type="submit">Расчитать промежуток</button>
     <p id="datecalc__result"></p>
-  </form> 
+  </form>
+
+  <div class="countdown-wrapper">
+      <div class="form-wrapper">
+      <h1 class="title">введите дату таймера</h1>
+      <input type="date" id="deadline" />
+      <button id="start" class="btn">Start</button>
+      <button id="stop" class="btn">Stop</button>
+      </div>
+      <h2 class="title">до конца таймера осталось:</h2>
+      <div class="countdown" id=countdown>
+          <div class="time">
+              <h2 id="days">00</h2>
+              <small>дней</small>
+          </div>
+          <div class="time">
+              <h2 id="hours">00</h2>
+              <small>часов</small>
+          </div>
+          <div class="time">
+              <h2 id="minutes">00</h2>
+              <small>минут</small>
+          </div>
+          <div class="time">
+              <h2 id="seconds">00</h2>
+              <small>секунд</small>
+          </div>
+      </div>
+  </div>
 </body>
 </html>
-
-<!-- import { DateTime } from 'https://moment.github.io/luxon/es6/luxon.min.js'; -->

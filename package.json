@@ -1,0 +1,27 @@
+{
+  "name": "webprog",
+  "version": "1.0.0",
+  "main": "webpack.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rm -rf build",
+    "start": "npm run clean && npx webpack --mode=development",
+    "serve": "npm run clean && npx webpack server --mode=development"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marynekrasova/webprog.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marynekrasova/webprog/issues"
+  },
+  "homepage": "https://github.com/marynekrasova/webprog#readme",
+  "description": "",
+  "devDependencies": {
+    "howler": "^2.2.3",
+    "webpack": "^5.69.1",
+    "webpack-cli": "^4.9.2"
+  }
+}
