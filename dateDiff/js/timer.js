@@ -1,8 +1,8 @@
-import {Howl} from 'howler';
+// import {Howl} from 'howler';
 
-const sound = new Howl({
-  src: ['sound.mp3']
-});
+// const sound = new Howl({
+//   src: ['sound.mp3']
+// });
 
 const year = document.getElementById("year");
 const days = document.getElementById("days");
@@ -18,7 +18,7 @@ function updateCounter() {
 
   if (dist <= 0){
     clearInterval(window.TimerId);
-    sound.play();
+    // sound.play();
     alert("Таймер сработал!");
   } else {
     const toDays = Math.floor(dist / 1000 / 60 / 60 / 24);
